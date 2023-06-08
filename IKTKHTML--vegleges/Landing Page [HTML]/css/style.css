@@ -1,0 +1,408 @@
+/*Készítette: Malindovszky Áron, Koppándi Olivér, Eppel Gergő*/
+body{
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0px;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+header{
+    margin-bottom: 3rem;
+    border-bottom: 2px solid orange;
+    margin-left: 16rem;
+    margin-right: 16rem;
+}
+p{
+    text-align: center;
+}
+button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 1) !important;
+    border: orange 0.2rem solid !important;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+button:hover{
+    border: white 0.2rem solid !important;
+    color: orange !important;
+}
+#st{
+    border-right: orange 0.15rem solid;
+    border-bottom: orange 0.15rem solid;
+    padding-top: 2.4rem;
+    padding: auto;
+    letter-spacing: 1.5px;
+    background-color: #333;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+#st2{
+    border-right: orange 0.15rem solid;
+    border-bottom: orange 0.15rem solid;
+    padding-top: 2.4rem;
+    padding: auto;
+    letter-spacing: 1.5px;
+    background-color: #333;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+#sti{ 
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-right: orange 0.15rem solid;
+    border-bottom: orange 0.15rem solid;
+    border-radius: 1rem;
+    background-color: #333;
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+#stis{
+    
+    border-right: orange 0.15rem solid;
+    border-bottom: orange 0.15rem solid;
+    border-radius: 1rem;
+    background-color: #333;
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+#clickable{
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    border-radius:  0.5rem;
+    font-size: 120%;
+    color: white;
+    margin-bottom: 3rem;
+    letter-spacing: 1.5px;
+}
+.thebtn{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 1) !important;
+    border: orange 0.2rem solid !important;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 15% !important;
+}
+.thebtn:hover{
+    border: white 0.2rem solid !important;
+    color: orange !important;
+}
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+.nav-link, .navbar-brand{
+    color: orange !important;
+}
+.nav-link:hover, .navbar-brand:hover{
+    color: white !important;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    text-shadow: none;
+    color: white;
+}
+#a{
+    padding-right: 30px;
+}
+#foot{
+    margin-top: 0.15rem;
+    color: rgba(0, 0, 0, 0.2);
+}
+h1{
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+    letter-spacing: 3px;
+}
+h2{
+    text-shadow: 0.2rem 0.2rem 0.2rem black;
+    letter-spacing: 3px;
+}
+@keyframes slideout{
+    from {
+        margin-right: 50rem;
+        margin-left: 50rem;
+    }
+    to {
+        margin-right: 16rem;
+        margin-left: 16rem;
+    }
+}
+header.slideout{
+    animation:slideout 1.5s both;
+}
+.main-text{
+    margin-top: 3.5rem;
+    height: 4.2rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
+}
+#c.cupslide{
+    animation:cupslide 5s ease;
+}
+@keyframes cupslide{
+    from {
+        opacity: 0%;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+#c2.c2upslide{
+    animation:cupslide 5s ease;
+}
+@keyframes c2upslide{
+    from {
+        opacity: 0%;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+#d.dupslide{
+    animation:dupslide 5s ease;
+}
+@keyframes dupslide{
+    from {
+        opacity: 0%;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+#d2.d2upslide{
+    animation:d2upslide 5.25s ease;
+}
+@keyframes d2upslide{
+    from {
+        opacity: 0%;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+#d3.d3upslide{
+    animation:d3upslide 5.5s ease;
+}
+@keyframes d3upslide{
+    from {
+        opacity: 0%;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+#d4.d4upslide{
+    animation:d4upslide 5.75s ease;
+}
+@keyframes d4upslide{
+    from {
+        opacity: 0%;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+@keyframes mtupslide{
+    from {
+        opacity: 0%;
+        transform: translateY(3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+@keyframes mt2upslide{
+    from {
+        opacity: 0%;
+        transform: translateY(3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+@keyframes stupslide{
+    from {
+        opacity: 0%;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+@keyframes st2upslide{
+    from {
+        opacity: 0%;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+@keyframes stiupslide{
+    from {
+        opacity: 0%;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+@keyframes stisupslide{
+    from {
+        opacity: 0%;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+@keyframes pupslide{
+    from {
+        opacity: 0%;
+        transform: scale(50%);
+    }
+    to {
+        opacity: 100%;
+        transform: scale(100%);
+    }
+}
+@keyframes ftrupslide{
+    from {
+        opacity: 0%;
+        transform: translateY(3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+@keyframes navdownslide{
+    from {
+        opacity: 0%;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0rem);
+    }
+}
+#mt.mtupslide{
+    animation:mtupslide 1.5s ease;
+}
+#mt2.mt2upslide{
+    animation:mt2upslide 3.5s ease;
+}
+#st.stupslide{
+    animation:stupslide 2.5s ease;
+}
+#st2.st2upslide{
+    animation:stupslide 4s ease;
+}
+#sti.stiupslide{
+    animation:stiupslide 3s ease;
+}
+#stis.stisupslide{
+    animation:stiupslide 4.5s ease;
+}
+.thebtn.pupslide{
+    animation:pupslide 5s ease;
+}
+#ftr.ftrupslide{
+    animation:ftrupslide 1.5s ease;
+}
+nav.navdownslide{
+    animation:navdownslide 1.5s ease;
+}
+#row{
+    margin-bottom: 20px;
+}
+* {box-sizing:border-box}
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  color: orange;
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 2.5px;
+  box-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+.active, .dot:hover {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  display: inline-block;
+}
