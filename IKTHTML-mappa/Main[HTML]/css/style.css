@@ -1,0 +1,308 @@
+/*Készítette: Malindovszky Áron*/
+/*Website-wide Changes*/
+body{
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Changes To The Navbar*/
+.nav-link, .navbar-brand{
+    color: orange !important;
+}
+/*Changes To The Navbar When The User Hovers Thier Mouse Over The Navbar Elements*/
+.nav-link:hover, .navbar-brand:hover{
+    color: white !important;
+}
+/*Changes To The Maincontainer*/
+.maincontainer{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    background: none;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Changes To The Card*/
+#thecard{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+/*Changes To The Card's Click Detector*/
+#checkbox{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+/*Changes To The Front Of The Card*/
+.thefront{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-color: orange;
+    color: #333;
+    font-size: 120%;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    letter-spacing: 0.5px;
+    transition: background-color 0.1s ease;
+}
+/*Changes To The Back Of The Card*/
+.theback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-color: #333;
+    color: orange;
+    font-size: 120%;
+    box-shadow: 0.15rem 0.15rem 0.15rem black;
+    transform: rotateY(180deg);
+    letter-spacing: 0.5px;
+    transition: background-color 0.1s ease;
+}
+/*Changes To The Button That Cycles The Card*/
+#btn{
+    background-color: rgba(0, 0, 0, 1) !important;
+    border: orange 0.2rem solid !important;
+    padding-left:3rem;
+    padding-right:3rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    border-radius:  0.5rem;
+    font-size: 120%;
+    color: white;
+    letter-spacing: 1.5px;
+}
+/*Changes To The Button When The User Hovers Thier Mouse Over The Button Element*/
+#btn:hover{
+    border: white 0.2rem solid !important;
+    color: orange !important;
+}
+/*Changes To The Button When Clicked/Focused*/
+#btn:focus,#btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+/*Changes To The Div Assigned During Card Rotation*/
+.rotated{
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+/*Changes To The Footer*/
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position:absolute;
+    color: rgba(0, 0, 0, 0.2);
+    cursor:default;
+}
+/*Changes To The Popup Card*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fade-in 0.5s ease-in-out;
+    letter-spacing: 1px;
+}
+/*Changes To The Popup Header*/
+#hrm{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 140%;
+}
+/*Popup Fade-Out Animation*/
+.modal.fade-out {
+    animation: fade-out 0.5s ease-in-out;
+} 
+/*Changes To The Popup Content*/
+.modal-content {
+    background-color: black;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid orange;
+    width: 40%;
+    text-align: center;
+    position: relative;
+    color: orange;
+}
+/*Timer Slide For The Popup Card*/
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: progress 5s linear forwards;
+    border-top: 1px solid orange;
+}
+@keyframes crfadein{
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+.custom-modal.crfadein{
+    animation: crfadein 0.5s ease;
+}
+@keyframes crfadeout{
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%
+    }
+}
+.custom-modal.crfadeout{
+    animation: crfadeout 0.5s ease;
+}
+/*Fade-In Handler*/
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+/*Fade-Out Handler*/
+@keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+/*Progressbar Handler*/
+@keyframes progress {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+}
+/*Changes To The Credits Popup*/
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+}
+/*Changes To The Credits Popup's Content*/
+.custom-modal-content {
+    background-color: black;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid orange;
+    width: 20%;
+    border-radius: 0.5rem;
+    color: orange;
+}
+/*Changes To The Credits Popup Close Button*/
+.custom-close {
+    color: orange;
+    font-size: 100%;
+    font-weight: bold;
+    background-color: #333;
+    border-radius: 0.5rem;
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Changes To The Credits Popup Close Button Upon Hover/Focus*/
+.custom-close:hover,
+.custom-close:focus {
+    color: #333;
+    background-color: orange;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+/*Changes To The Open Button*/
+#openModalBtn{
+    border: none;
+    background-color: orange;
+    color: #333;
+}
+/*Changes To The Open Button Upon Focus/Active*/
+#openModalBtn:focus,#openModalBtn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+#openModalBtn:hover{
+    color: orange;
+    background-color: black;
+}
+#CCBtn{
+    border: none;
+    background-color: orange;
+    color: #333;
+}
+#CCBtn:focus,#CCBtn:active{
+    outline: none !important;
+    box-shadow: none;
+}
+#CCBtn:hover{
+    color: orange;
+    background-color: black;
+}
+.nav-item{
+    margin-left:0.1rem;
+    margin-right:0.1rem;
+}
+
+
+@keyframes navdrop{
+    from {
+        transform: translateY(-3rem);
+        opacity: 0%
+    }
+    to {
+        transform: translateY(0rem);
+        opacity: 100%
+    }
+}
+nav.navdrop{
+    animation: navdrop 1.5s ease;
+}
